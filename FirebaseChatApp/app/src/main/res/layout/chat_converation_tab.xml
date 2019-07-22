@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_chat_container"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/consversation_tab_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/conversation_tab_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/consversation_tab_image"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@id/consversation_tab_image"
+            android:fontFamily="cursive"
+            android:text="Chou Tzuyu"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conversation_tab_name"
+            android:layout_alignStart="@id/conversation_tab_name"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/conversation_tab_consersation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="casual"
+                android:text="Chou Tzuyu :It has been a while :'>"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:maxLength="25"/>
+
+            <ImageView
+                android:id="@+id/conversation_seen_dot"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignTop="@+id/conversation_tab_consersation"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                app:srcCompat="@drawable/ic_square_seen_1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/conversation_tab_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/conversation_tab_name"
+            android:layout_alignBottom="@id/consversation_tab_image"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="casual"
+            android:text="Jan 29"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/conversation_online_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/consversation_tab_image"
+            android:layout_alignBottom="@id/consversation_tab_image"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_cube" />
+    </RelativeLayout>
+</LinearLayout>

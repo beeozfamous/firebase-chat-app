@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/custom_bar_image"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/custom_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/custom_bar_image"
+        android:fontFamily="cursive"
+        android:text="Display Name"
+        android:textColor="#ffffff"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/custom_bar_last_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_bar_name"
+        android:layout_alignStart="@+id/custom_bar_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="casual"
+        android:text="Last seen"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/custom_online_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/custom_bar_image"
+        android:layout_alignBottom="@+id/custom_bar_image"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-1dp"
+        android:scaleType="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_cube" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/friend_request_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/request_tab_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_polar_bear" />
+
+        <TextView
+            android:id="@+id/request_tab_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/request_tab_image"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/request_tab_image"
+            android:fontFamily="cursive"
+            android:text="Polar Bear"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/online_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/request_tab_image"
+            android:layout_alignBottom="@id/request_tab_image"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_cube" />
+
+        <Button
+            android:id="@+id/request_accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_below="@+id/request_tab_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/request_tab_image"
+            android:background="@drawable/button_shape_6"
+            android:text="Accept"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/request_decline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignTop="@+id/request_accept_button"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/request_accept_button"
+            android:background="@drawable/button_shape_4"
+            android:text="Decline "
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

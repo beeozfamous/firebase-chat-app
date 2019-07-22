@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="top"
+    android:background="@drawable/ab_gradient"
+    android:elevation="0dp"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:id="@+id/tool_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OWl</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="version">1.0.7</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

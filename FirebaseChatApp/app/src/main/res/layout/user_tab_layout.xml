@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/user_tab_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/user_tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_tab_image"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@id/user_tab_image"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/user_tab_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_tab_name"
+        android:layout_alignStart="@id/user_tab_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/friends_online_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/user_tab_image"
+        android:layout_alignBottom="@id/user_tab_image"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_cube" />
+</RelativeLayout>

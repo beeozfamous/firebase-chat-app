@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/users_tool_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_list_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/users_tool_bar"
+        android:layout_alignParentStart="true"
+        tools:listitem="@layout/recycler_view_item">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
